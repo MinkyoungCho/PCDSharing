@@ -11,15 +11,15 @@ args = parser.parse_args()
 
 lidar_frequency = 1 # LiDAR sweeps at 10 Hz 
 
-HOST = "141.212.108.156" # Server IP
+HOST = "" # Server IP
 PORT = int(args.port)
 BW = int(args.bw)
 
 soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 soc.connect((HOST,PORT))
 
-# file_name = "draco_1_pcd.drc" # when sending draco compressed PCD
-file_name = "shared_pcd.npy" # when sending original PCD (without compression)
+file_name = "draco_1_pcd.drc" # when sending draco compressed PCD
+# file_name = "/home/shared_pcd.npy" # when sending original PCD (without compression)
 
 file_send = open(file_name,"rb")
 content = file_send.read()

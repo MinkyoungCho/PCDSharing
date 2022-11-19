@@ -2,7 +2,7 @@ import socket
 import time
 
 lidar_frequency = 1 # fix this to 1 to measure the delay for 1 point cloud frame
-HOST = "141.212.108.156" 
+HOST = "" # Server IP
 PORT = 8000
 
 try:
