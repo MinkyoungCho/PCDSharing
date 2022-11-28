@@ -11,6 +11,16 @@
 *  For just checking TCP communication, run `python client.py`.
 *  If you want to test while adjusting the egree bandwidth of client machine, run `bash bandwidth.sh`.
 
+### For C++ TCP
+
+#### Server
+* run g++ -g pcd_server.cpp -o pcd_server -lm
+* ./pcd_server 5050
+
+#### Client 
+* g++ -g pcd_client.cpp -o pcd_client -lm
+* ./pcd_client 127.0.0.1 5050
+
 
 ### TODOs
 *  convert python socket programming into C++ socket programming
