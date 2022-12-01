@@ -14,11 +14,11 @@
 ### For C++ TCP
 
 #### Server
-* run g++ -g pcd_server.cpp -o pcd_server -lm
+* g++ -g pcd_server_1.cpp -o pcd_server_1 -lm
 * ./pcd_server 5050
 
 #### Client 
-* g++ -g pcd_client.cpp -o pcd_client -lm
+* g++ -g pcd_client_1.cpp -o pcd_client_1 -lm
 * ./pcd_client 127.0.0.1 5050
 
 
